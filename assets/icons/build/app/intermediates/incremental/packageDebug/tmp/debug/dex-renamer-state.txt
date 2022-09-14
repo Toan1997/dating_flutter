@@ -1,4 +1,0 @@
-#Tue Sep 13 11:06:43 ICT 2022
-base.0=D\:\\ToanWorking\\dating_flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
