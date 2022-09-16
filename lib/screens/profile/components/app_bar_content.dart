@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../components/rounded_icon.dart';
 import '../../../components/rounded_icon_title.dart';
 import '../../../components/square_icon_btn.dart';
-import '../../../constants.dart';
 import '../../../size_config.dart';
 
 class AppBarContent extends StatelessWidget{

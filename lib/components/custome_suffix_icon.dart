@@ -4,10 +4,10 @@ import 'package:flutter_svg/svg.dart';
 import '../size_config.dart';
 
 class CustomSuffixIcon extends StatelessWidget {
-  final String svgIcon;
+  final IconData iconData;
   const CustomSuffixIcon({
     Key? key,
-    required this.svgIcon,
+    required this.iconData,
   }) : super(key: key);
 
   @override
@@ -19,9 +19,8 @@ class CustomSuffixIcon extends StatelessWidget {
         getProportionScreenWidth(20)!,
         getProportionScreenWidth(20)!,
       ),
-      child: SvgPicture.asset(
-        svgIcon,
-        height: getProportionScreenWidth(18),
+      child:Icon(
+        iconData,
       ),
     );
   }

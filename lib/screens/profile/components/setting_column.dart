@@ -16,7 +16,7 @@ class SettingColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: press,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: getProportionScreenWidth(20)!),

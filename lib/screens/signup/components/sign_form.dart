@@ -72,7 +72,7 @@ class _SignFormState extends State<SignForm> {
       decoration: InputDecoration(
           labelText: "Confirm Password",
           hintText: "Re-enter your password",
-          suffixIcon: CustomSuffixIcon(svgIcon: 'assets/icons/Lock.svg')
+          suffixIcon: CustomSuffixIcon(iconData: Icons.lock_sharp)
       ),
     );
   }
@@ -108,7 +108,7 @@ class _SignFormState extends State<SignForm> {
       decoration: InputDecoration(
           labelText: "Password",
           hintText: "Enter your password",
-          suffixIcon: CustomSuffixIcon(svgIcon: 'assets/icons/Lock.svg')
+          suffixIcon: CustomSuffixIcon(iconData: Icons.lock_sharp)
       ),
     );
   }
@@ -143,7 +143,7 @@ class _SignFormState extends State<SignForm> {
       decoration: InputDecoration(
           labelText: "Email",
           hintText: "Enter your email",
-          suffixIcon: CustomSuffixIcon(svgIcon: 'assets/icons/Mail.svg')
+          suffixIcon: CustomSuffixIcon(iconData: Icons.lock_sharp)
       ),
     );
   }

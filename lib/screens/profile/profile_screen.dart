@@ -1,4 +1,9 @@
+import 'package:dating_flutter/size_config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import '../../components/footer_content.dart';
+import '../../components/square_icon_btn.dart';
+import '../../components/square_icon_btn_footer.dart';
 import '../profile/components/body.dart';
 import 'components/app_bar_content.dart';
 
@@ -18,34 +23,3 @@ class ProfileScreen extends StatelessWidget{
 
 }
 
-class FooterContent extends StatelessWidget {
-  const FooterContent({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 100,
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(30),
-              topRight: Radius.circular(30)
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey,
-              offset: Offset(0.0, 1.0), //(x,y)
-              blurRadius: 3.0,
-            ),
-          ],
-      ),
-      child: Row(
-        children: [
-
-        ],
-      ),
-    );
-  }
-}
