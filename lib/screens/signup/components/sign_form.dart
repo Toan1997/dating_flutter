@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../components/custome_suffix_icon.dart';
+import '../../../components/custom_suffix_icon.dart';
 import '../../../components/default_button.dart';
 import '../../../components/form_error.dart';
 import '../../../constants.dart';

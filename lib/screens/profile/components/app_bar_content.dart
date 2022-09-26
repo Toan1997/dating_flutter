@@ -4,6 +4,12 @@ import '../../../components/square_icon_btn.dart';
 import '../../../size_config.dart';
 
 class AppBarContent extends StatelessWidget{
+  final String title;
+  const AppBarContent({
+    Key? key,
+    required this.title
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -18,7 +24,7 @@ class AppBarContent extends StatelessWidget{
                   children: [
                     RoundedIconTitle(iconData: Icons.emergency_outlined),
                     SizedBox(width: getProportionScreenWidth(20)),
-                    Text('Profile',style: TextStyle(
+                    Text(title,style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                       fontSize: 25

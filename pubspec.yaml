@@ -36,7 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.19.3
   provider: ^6.0.3
-
+  dropdown_button2: ^1.8.0
+  swipeable_card_stack: ^0.0.5
 
 dev_dependencies:
   flutter_test:

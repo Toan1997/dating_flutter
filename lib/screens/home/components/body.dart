@@ -1,14 +1,19 @@
+import 'package:dating_flutter/screens/home/components/tinder_card.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: SingleChildScrollView(
-            child: Column(
+        child: SingleChildScrollView(
+          child: Container(
+            height: 300,
+            width: 200,
+            color: Colors.deepPurple,
+            child: Stack(
+              children: [
 
+              ],
             ),
           ),
         ),
