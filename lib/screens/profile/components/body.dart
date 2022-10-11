@@ -1,38 +1,40 @@
-import 'package:dating_flutter/screens/profile/components/avatar_setting.dart';
-import 'package:dating_flutter/screens/profile/components/setting_column.dart';
+import 'package:dating_flutter/constants.dart';
+import 'package:dating_flutter/screens/profile/components/profile_images.dart';
+import 'package:dating_flutter/screens/profile/components/top_rounded_container.dart';
+import 'package:dating_flutter/size_config.dart';
 import 'package:flutter/material.dart';
-import '../edit/edit_screen.dart';
+import '../../../models/profile.dart';
 
 class Body extends StatelessWidget{
+  final Profile profile;
+  const Body({
+    Key? key, required this.profile,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-   return Container(
-     child: Column(
-       children: [
-         Container(
-           child: Column(
-             children: [
-               AvatarSetting(avatarSrc: 'https://okr.dinco.app/app-assets/images/portrait/small/avatar.webp',name: "Adam Smith"),
-             ],
-           ),
-         ),
-         SettingColumn(iconData: Icons.person_sharp,name: 'Edit Profile',press: (){
-           Navigator.push(
-             context,
-             MaterialPageRoute(
-               builder: (context){
-                 return EditProfileScreen();
-               },
-             ),
-           );
-         }),
-         SettingColumn(iconData: Icons.notifications_sharp,name: 'Notification',press: (){}),
-         SettingColumn(iconData: Icons.lock_sharp,name: 'Security',press: (){}),
-       ],
-     )
-
-   );
+    return CustomScrollView(
+      slivers: [
+        SliverAppBar(
+          iconTheme: IconThemeData(
+            color: kPrimaryColor,
+          ),
+          expandedHeight: getProportionScreenWidth(450),
+          flexibleSpace: Flexible(
+            child: Column(
+              children: [
+                ProfileImages(profile: profile),
+              ],
+            )
+          )
+        )
+      ],
+    );
   }
 }
+
+
+
+
 
 

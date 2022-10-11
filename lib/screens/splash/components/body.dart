@@ -16,6 +16,7 @@ class _BodyState extends State<Body>{
   int countSplashData = 0;
   int currentPage = 0;
   int nextCurrentPage = 0;
+
   List<Map<String,String>> splashData = [
     {
      "text": "Welcome to..",

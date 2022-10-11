@@ -1,6 +1,7 @@
 import 'package:dating_flutter/screens/home/home_screen.dart';
-import 'package:dating_flutter/screens/profile/edit/edit_screen.dart';
 import 'package:dating_flutter/screens/profile/profile_screen.dart';
+import 'package:dating_flutter/screens/settings/edit/edit_profile_screen.dart';
+import 'package:dating_flutter/screens/settings/setting_screen.dart';
 import 'package:dating_flutter/screens/signin/components/login_success.dart';
 import 'package:dating_flutter/screens/signin/signin_screen.dart';
 import 'package:dating_flutter/screens/splash/splash_screen.dart';
@@ -11,7 +12,8 @@ final Map<String, WidgetBuilder> routes = {
   SigninScreen.routeName: (context) => SigninScreen(),
   LoginSuccess.routeName: (context) => LoginSuccess(),
   HomeScreen.routeName: (context) => HomeScreen(),
-  ProfileScreen.routeName: (context) => ProfileScreen(),
+  SettingScreen.routeName: (context) => SettingScreen(),
   EditProfileScreen.routeName: (context) => EditProfileScreen(),
+  ProfileScreen.routeName: (context) => ProfileScreen(),
 
 };

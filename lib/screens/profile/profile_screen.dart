@@ -1,21 +1,14 @@
+import 'package:dating_flutter/models/profile.dart';
+import 'package:dating_flutter/screens/profile/components/body.dart';
 import 'package:flutter/material.dart';
-import '../../components/footer_content.dart';
-import '../profile/components/body.dart';
-import 'components/app_bar_content.dart';
 
 class ProfileScreen extends StatelessWidget{
   static String routeName = "/profile";
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-     appBar:PreferredSize(
-       preferredSize:  Size.fromHeight(100),
-       child:  AppBarContent(title: "Profile"),
-     ),
-     body: Body(),
-     bottomNavigationBar: FooterContent(route: routeName),
-   );
+    return Scaffold(
+      backgroundColor: Color(0xFFF5F6F9),
+      body: Body(profile: demoProfile[1]),
+    );
   }
-
 }
-

@@ -1,51 +1,42 @@
+import 'package:dating_flutter/screens/profile/components/rounded_icon_btn.dart';
 import 'package:flutter/material.dart';
-import '../../../components/rounded_icon_title.dart';
-import '../../../components/square_icon_btn.dart';
+import 'package:flutter_svg/svg.dart';
 import '../../../size_config.dart';
 
-class AppBarContent extends StatelessWidget{
-  final String title;
+class AppBarContent extends StatelessWidget {
   const AppBarContent({
     Key? key,
-    required this.title
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: getProportionScreenWidth(20)!,vertical:getProportionScreenHeight(30)!),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
+        padding:  EdgeInsets.symmetric(horizontal: getProportionScreenWidth(20)!),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              RoundedIconBtn(iconData: Icons.arrow_back, press: () => Navigator.pop(context)),
               Container(
+                padding: EdgeInsets.symmetric(horizontal: 14,vertical: 5),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20)
+                ),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    RoundedIconTitle(iconData: Icons.emergency_outlined),
-                    SizedBox(width: getProportionScreenWidth(20)),
-                    Text(title,style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25
-                    ),
-                    ),
+                    Text("aaa",style: TextStyle(fontWeight: FontWeight.bold)),
+                    SizedBox(width: 5),
+                    SvgPicture.asset('assets/icons/Star Icon.svg')
                   ],
                 ),
-              ),
-            Container(
-              child: Row(
-                children: [
-                  SquareIconBtn(iconData: Icons.edit_sharp,press: (){}),
-                  SizedBox(width: getProportionScreenWidth(20)),
-                  SquareIconBtn(iconData: Icons.more_vert_outlined,press: (){}),
-                ],
-              ),
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );
   }
-
 }

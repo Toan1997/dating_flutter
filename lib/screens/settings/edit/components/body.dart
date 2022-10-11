@@ -1,4 +1,4 @@
-import 'package:dating_flutter/screens/profile/edit/components/setting_form.dart';
+import 'package:dating_flutter/screens/settings/edit/components/setting_form.dart';
 import 'package:flutter/material.dart';
 import '../../../../size_config.dart';
 class Body extends StatelessWidget{

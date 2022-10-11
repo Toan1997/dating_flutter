@@ -1,8 +1,8 @@
 import 'package:dating_flutter/components/square_icon_btn_footer.dart';
 import 'package:dating_flutter/screens/home/home_screen.dart';
-import 'package:dating_flutter/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../screens/settings/setting_screen.dart';
 import '../size_config.dart';
 
 class FooterContent extends StatelessWidget {
@@ -50,16 +50,16 @@ class FooterContent extends StatelessWidget {
             SquareIconBtnFooter(iconData: Icons.favorite_sharp,press: (){},active: route == '/xxx' ? true : false),
             SquareIconBtnFooter(iconData: Icons.message_sharp,press: (){},active: route == '/ccc' ? true : false),
             SquareIconBtnFooter(iconData: Icons.person_sharp,press: (){
-              if(route !=  ProfileScreen.routeName)
+              if(route !=  SettingScreen.routeName)
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context){
-                    return ProfileScreen();
+                    return SettingScreen();
                   },
                 ),
               );
-            },active: (route ==  ProfileScreen.routeName) ? true : false),
+            },active: (route ==  SettingScreen.routeName) ? true : false),
           ],
         ),
       ),

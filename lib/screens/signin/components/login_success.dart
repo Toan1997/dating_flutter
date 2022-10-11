@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../components/default_button.dart';
 import '../../../size_config.dart';
 import '../../home/home_screen.dart';
-import '../../profile/profile_screen.dart';
+import '../../settings/setting_screen.dart';
 
 class LoginSuccess extends StatelessWidget{
   static String routeName = "/login_success";
@@ -44,7 +44,7 @@ class LoginSuccess extends StatelessWidget{
                       context,
                       MaterialPageRoute(
                         builder: (context){
-                          return ProfileScreen();
+                          return SettingScreen();
                         },
                       ),
                     );
